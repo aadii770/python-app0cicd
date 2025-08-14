@@ -147,10 +147,10 @@ pipeline {
 
 ---
 
-1. **Job Configuration** showing "Pipeline script from SCM".
-   ![](/python-app-img/job-configuration.png)
-2. **Build Console Output** showing successful deployment logs.
-   ![](/python-app-img/successful-build.png)
+1. **Job Configuration** 
+   ![](/python-app-img/job-config.png)
+2. **Build Console Output** 
+   ![](/python-app-img/build-success.png)
 3. **Browser** showing your running Python app.
    ![](/python-app-img/final-output-1.png)
 
