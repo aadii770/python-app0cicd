@@ -172,3 +172,32 @@ pipeline {
 ```
 http://<public-ip of app-server>:5000
 ```
+
+
+## ⚡ Automating Builds with GitHub Webhooks
+
+To trigger the Jenkins build automatically on code push, ensure the **GitHub Plugin** is installed on Jenkins.
+
+**Step 1 — Enable GitHub Hook Trigger in Jenkins**
+
+* Open your Jenkins job → Configure
+* Under **Build Triggers**, check:
+
+  * `GitHub hook trigger for GITScm polling`
+
+![](/python-app-img/webhook-jenkins-1.png)
+
+
+**Step 2 — Add Webhook in GitHub**
+
+* Go to your repository → **Settings** → **Webhooks** → **Add webhook**
+* Payload URL:
+
+```
+http://<JENKINS_SERVER_IP>:8080/github-webhook/
+```
+
+![](/python-app-img/webhook-GIThub.png)
+
+Now, whenever you push code to the repo, Jenkins will automatically pull changes and deploy them.
+
