@@ -2,8 +2,8 @@ pipeline {
     agent any
 
     environment {
-        SSH_CRED = 'portfolio-server-ssh'
-        SERVER_IP = '98.81.210.251'
+        SSH_CRED = 'python-app-credentials'
+        SERVER_IP = '54.221.103.181'
         REMOTE_USER = 'ubuntu'
         APP_DIR = '/home/ubuntu/pythonapp'
     }
@@ -11,7 +11,7 @@ pipeline {
     stages {
         stage('Clone Repo') {
             steps {
-                git url: 'https://github.com/Amogh902/Portfolio.git', branch: 'main'
+                git url: 'https://github.com/Amogh902/pythonapp-CICD.git', branch: 'main'
             }
         }
 
