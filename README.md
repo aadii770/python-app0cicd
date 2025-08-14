@@ -154,6 +154,8 @@ pipeline {
 3. **Browser** showing your running Python app.
    ![](/python-app-img/final-output-1.png)
 
+   ![](/python-app-img/final-output-2.png)
+
 ---
 
 ## How It Works
@@ -165,7 +167,7 @@ pipeline {
 
 ---
 
-## ✅ Example Access URL
+## Example Access URL
 
 ```
 http://<public-ip of app-server>:5000
