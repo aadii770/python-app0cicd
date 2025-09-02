@@ -2,8 +2,8 @@ pipeline {
     agent any
 
     environment {
-        SSH_CRED = 'python-app-credentials'
-        SERVER_IP = '54.221.103.181'
+        SSH_CRED = "node-js-app-cred"
+        SERVER_IP = "54.147.9.94"
         REMOTE_USER = 'ubuntu'
         APP_DIR = '/home/ubuntu/pythonapp'
     }
